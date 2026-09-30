@@ -15,12 +15,12 @@ An interactive C++ application designed to apply various image processing filter
 
 According to the assignment rules, filters are distributed based on student IDs sorted in ascending order:
 
-| Student Name | Student ID | Section | Assigned Filters & Tasks |
-| :--- | :---: | :---: | :--- |
-| **Adam Sameh Said Sayed** | 20250075 | Filter 1 (Grayscale), Filter 5 (Flip), Filter 9 (Merge), Filter 13 (Sunlight) |
-| **[Name 2 - Second ID]** | [ID 2] | Filter 2 (Black & White), Filter 6 (Rotate), Filter 10 (Detect Edges), Filter 14 (TV Screen) |
-| **[Name 3 - Third ID]** | [ID 3] | Filter 3 (Invert), Filter 7 (Darken/Lighten), Filter 11 (Crop), Filter 15 (Purple Effect) |
-| **[Name 4 - Largest ID]** | [ID 4] | Filter 4 (Frame), Filter 8 (Resize), Filter 12 (Blur), Filter 16 (Infrared) |
+| Student Name | Student ID | Assigned Filters & Tasks |
+|:---|:---:|:---|
+| **Adam Sameh Said** | **20250075** | Filter 1 — Grayscale, Filter 5 — Flip, Filter 9 — Merge, Filter 13 — Sunlight |
+| **Youssef Tamer Abdelslam** | **20250761** | Filter 2 — Black & White, Filter 6 — Rotate, Filter 10 — Detect Edges, Filter 14 — TV Screen |
+| **Ibrahim Abdelrazek Mohamed** | **20251003** | Filter 3 — Invert, Filter 7 — Darken/Lighten, Filter 11 — Crop, Filter 15 — Purple Effect |
+| **Fares Yasser Mahmoud** | **20251281** | Filter 4 — Frame, Filter 8 — Resize, Filter 12 — Blur, Filter 16 — Infrared |
 
 * **Group Tasks:** Interactive Menu System, Input Validation, File Load/Save Functions, and GitHub Management.
 

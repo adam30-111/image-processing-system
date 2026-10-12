@@ -16,36 +16,32 @@ An interactive C++ application designed to apply various image processing filter
 According to the assignment rules, filters are distributed based on student IDs sorted in ascending order:
 
 | Student Name | Student ID | Assigned Filters & Tasks |
-|:---|:---:|:---|
-| **Adam Sameh Said** | **20250075** | Filter 1 — Grayscale, Filter 5 — Flip, Filter 9 — Merge, Filter 13 — Sunlight |
-| **Youssef Tamer Abdelslam** | **20250761** | Filter 2 — Black & White, Filter 6 — Rotate, Filter 10 — Detect Edges, Filter 14 — TV Screen |
-| **Ibrahim Abdelrazek Mohamed** | **20251003** | Filter 3 — Invert, Filter 7 — Darken/Lighten, Filter 11 — Crop, Filter 15 — Purple Effect |
-| **Fares Yasser Mahmoud** | **20251281** | Filter 4 — Frame, Filter 8 — Resize, Filter 12 — Blur, Filter 16 — Infrared |
+| :--- | :---: | :--- |
+| **Adam Sameh** | 20250075 | Filter 1 (Grayscale), Filter 5 (Flip), Filter 9 (Merge), Filter 13 (Wano Sunlight) |
+| **Youssef Tamer** | 20250761 | Filter 2 (Black & White), Filter 6 (Rotate), Filter 10 (Detect Edges), Filter 14 (Old TV) |
+| **Ibrahim Abdelrazek** | 20251003 | Filter 3 (Invert), Filter 7 (Darken/Lighten), Filter 11 (Crop), Filter 15 (Wano Night / Purple) |
+| **Fares Yasser** | 20251281 | Filter 4 (Frame), Filter 8 (Resize), Filter 12 (Blur), Filter 16 (Infrared) |
 
-* **Group Tasks:** Interactive Menu System, Input Validation, File Load/Save Functions, and GitHub Management.
+### 🏆 Beast Level Tasks (Bonus - All Team)
+- **Filter 17:** Image Skewing Filter.
+- **Filter 18:** Oil Painting Filter.
+- **GUI:** Implemented interactive Graphical User Interface to display images and modifications.
 
 ---
 
 ## 🛠️ System Architecture & Diagram
 
 The program follows a modular hierarchy structured as:
-- **Level 0:** `main()` function running the primary menu loop.
+- **Level 0:** `main()` function running the primary menu loop (or Event Loop for GUI).
 - **Level 1:** File I/O operations (`load_image`, `save_image`) and filter selector functions.
 - **Level 2:** Core mathematical algorithms for pixel manipulations per filter.
 
----
+🔗 **[Click Here to View the Shared System Breakdown Diagram Document](INSERT_YOUR_SHARED_DOC_LINK_HERE)**
 
-## 💻 Features & Supported Extensions
-- **Continuous Execution:** Menu loops until the user explicitly selects `Exit`.
-- **Format Verification:** Validates file existence and supported extensions (`.png`, `.jpg`, `.jpeg`, `.bmp`, `.tga`).
-- **Save Flexibility:** Option to overwrite current files or save with new filenames.
-- **Safety Checks:** Prevents application crashes on invalid input via error-handling bounds.
-
----
+### System Diagram
 
 ```mermaid
 graph TD
-
     classDef default font-family:sans-serif,font-size:14px,color:#000;
     classDef mainBox fill:#ffffff,stroke:#000000,stroke-width:3px,font-weight:bold,font-size:18px;
     classDef level1 fill:#f9f9f9,stroke:#555555,stroke-width:2px,font-weight:bold;
@@ -74,23 +70,23 @@ graph TD
         direction TB
         
         F1["F1 Grayscale<br><span style='font-size:12px; font-weight:normal;'>Grayscaleflow</span>"]:::adam
-        F2["F2 Black and white<br><span style='font-size:12px; font-weight:normal;'>BlackandWhiteflow</span>"]:::youssef
-        F3["F3 Invert<br><span style='font-size:12px; font-weight:normal;'>invertColorsflow</span>"]:::ibrahim
-        F4["F4 Frame<br><span style='font-size:12px; font-weight:normal;'>addFrame</span>"]:::fares
-        
         F5["F5 Flip<br><span style='font-size:12px; font-weight:normal;'>flipImage</span>"]:::adam
-        F6["F6 Rotate<br><span style='font-size:12px; font-weight:normal;'>rotateImage</span>"]:::youssef
-        F7["F7 Darken / lighten<br><span style='font-size:12px; font-weight:normal;'>adjustBrightness</span>"]:::ibrahim
-        F8["F8 Resize<br><span style='font-size:12px; font-weight:normal;'>resizeImage</span>"]:::fares
-
         F9["F9 Merge<br><span style='font-size:12px; font-weight:normal;'>mergeImages, uses F8</span>"]:::adam
-        F10["F10 Edge detection<br><span style='font-size:12px; font-weight:normal;'>detectEdges</span>"]:::youssef
-        F11["F11 Crop<br><span style='font-size:12px; font-weight:normal;'>cropImage</span>"]:::ibrahim
-        F12["F12 Blur<br><span style='font-size:12px; font-weight:normal;'>blurWithLevel</span>"]:::fares
-
         F13["F13 Wano sunlight<br><span style='font-size:12px; font-weight:normal;'>wanoSunlightFlow</span>"]:::adam
+        
+        F2["F2 Black and white<br><span style='font-size:12px; font-weight:normal;'>BlackandWhiteflow</span>"]:::youssef
+        F6["F6 Rotate<br><span style='font-size:12px; font-weight:normal;'>rotateImage</span>"]:::youssef
+        F10["F10 Edge detection<br><span style='font-size:12px; font-weight:normal;'>detectEdges</span>"]:::youssef
         F14["F14 Old TV<br><span style='font-size:12px; font-weight:normal;'>oldTV</span>"]:::youssef
+        
+        F3["F3 Invert<br><span style='font-size:12px; font-weight:normal;'>invertColorsflow</span>"]:::ibrahim
+        F7["F7 Darken / lighten<br><span style='font-size:12px; font-weight:normal;'>adjustBrightness</span>"]:::ibrahim
+        F11["F11 Crop<br><span style='font-size:12px; font-weight:normal;'>cropImage</span>"]:::ibrahim
         F15["F15 Wano night<br><span style='font-size:12px; font-weight:normal;'>purpleFilter</span>"]:::ibrahim
+
+        F4["F4 Frame<br><span style='font-size:12px; font-weight:normal;'>addFrame</span>"]:::fares
+        F8["F8 Resize<br><span style='font-size:12px; font-weight:normal;'>resizeImage</span>"]:::fares
+        F12["F12 Blur<br><span style='font-size:12px; font-weight:normal;'>blurWithLevel</span>"]:::fares
         F16["F16 Infrared<br><span style='font-size:12px; font-weight:normal;'>infrared</span>"]:::fares
 
         F17["F17 Skew<br><span style='font-size:12px; font-weight:normal;'>skewImage</span>"]:::team
@@ -98,3 +94,14 @@ graph TD
     end
 
     FilterBtn --> L2
+
+    subgraph Legend ["Team Members"]
+        direction LR
+        L_Adam["Adam (ID 1)"]:::adam
+        L_Youssef["Youssef (ID 2)"]:::youssef
+        L_Ibrahim["Ibrahim (ID 3)"]:::ibrahim
+        L_Fares["Fares (ID 4)"]:::fares
+        L_Team["All team"]:::team
+    end
+    
+    L2 ~~~ Legend

@@ -43,6 +43,7 @@ The program follows a modular hierarchy structured as:
 
 ---
 
+```mermaid
 graph TD
 
     classDef default font-family:sans-serif,font-size:14px,color:#000;

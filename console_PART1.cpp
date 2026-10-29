@@ -1,38 +1,3 @@
-/*
- * =========================================================
- * CS213 - Object Oriented Programming
- * Faculty of Computing and AI - Cairo University
- * Assignment 1 - Part 1 (Menu + 8 Filters)
- * Year 2026-2027 - First Semester
- * Supervised by: Dr. Mohammad El-Ramly
- * =========================================================
- *
- * Section: s13, s14
- *
- * Team Members:
- *   1. Adam Sameh Said - ID: 20250075
- *   2. Youssef Tamer Abdelslam - ID: 20250761
- *   3. Ibrahim Abdelrazek Mohamed - ID: 20251003
- *   4. Fares Yasser Mahmoud- ID: 20251281
- *
- * Work Breakdown:
- *   - Filter 1 (Grayscale Conversion): Adam Sameh Said
- *   - Filter 2 (Black and White Conversion): Youssef Tamer Abdelslam
- *   - Filter 3 (Invert Image): Ibrahim Abdelrazek Mohamed
- *   - Filter 4 (Adding a Frame to the Picture): Fares Yasser Mahmoud
- *   - Filter 5 (Flip Image): Adam Sameh Said
- *   - Filter 6 (Rotate Image): Youssef Tamer Abdelslam
- *   - Filter 7 (Darken and Lighten Image): Ibrahim Abdelrazek Mohamed
- *   - Filter 8 (Resizing Images): Fares Yasser Mahmoud
- *
- * File Description:
- *   Console-based image processing tool. Loads an image,
- *   applies one of 8 filters chosen from a menu, and
- *   saves the result. Uses the Image class (Image_Class.h)
- *   built on stb_image / stb_image_write.
- * =========================================================
- */
-
 #include <iostream>
 #include <algorithm>
 #include <fstream>
